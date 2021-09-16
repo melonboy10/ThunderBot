@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "thunder_bot",
+  "version": "${version}",
+
+  "name": "Thunder Bot Mod",
+  "description": "This mod adds a a Discord bot that pings people when it thunders",
+  "authors": [
+    "melonboy10"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/thunder_bot/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.melonboy10.thunderbot.ThunderBotMod"
+    ]
+  },
+  "mixins": [
+    "thinder_bot.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
